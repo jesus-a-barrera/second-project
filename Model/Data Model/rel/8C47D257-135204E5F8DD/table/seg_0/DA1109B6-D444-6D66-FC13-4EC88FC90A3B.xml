@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA1109B6-D444-6D66-FC13-4EC88FC90A3B" name="Boards">
+<sourceDDLFile>SecondProject.ddl</sourceDDLFile>
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:12:41 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6E508215-706A-B1A0-7BE9-8DE61B70DD05">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:13:25 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_full" id="BBBE545E-D09B-A381-30D8-98686A94E470">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:13:25 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Turns_id" id="48212C80-FB6A-24A9-5688-0C4C149C322F">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:13:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="860107FD-6767-B443-254D-882401A56353" referredColumn="017580C9-66D5-C8F0-6AA0-C5E8957C84DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E881953A-AB1D-3182-9AD0-634B5D8DA769" name="Boards_PK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:13:25 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E508215-706A-B1A0-7BE9-8DE61B70DD05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B38C09D2-B4A0-FA92-9294-3C88E9E0F8ED" name="Boards_Turns_FK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:13:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48212C80-FB6A-24A9-5688-0C4C149C322F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,67 @@
+@startuml Conceptual Diagram
+    Object Players {
+        id
+        name
+        winnings
+        losses
+        ties 
+    }
+    Object Games {
+        id
+        name
+        number_of_turns
+        number_of_players
+    }
+    Object Players_Turns {
+        turn_id
+        player_id
+        player_role
+        is_last_move
+        is_winner
+    }
+    Object Turns {
+        id
+        game_id
+        player1_id
+        player2_id
+        last_move
+        is_finished
+        winner
+    }
+    Object Boards {
+        id
+        turn_id
+        is_full
+    }
+    Object Squares {
+        board_id
+        x_position
+        y_position
+        piece 
+    }
+    Object HangedMen {
+        id
+        turn_id
+        is_dead
+        is_saved
+    }
+    Object SecretLetters {
+        hangedman_id
+        letter
+        position
+        is_shown
+    }
+
+    Players --o{ Players_Turns
+    
+    Games --o{ Turns
+
+    Turns --o{ Boards
+    Turns -right-o{ HangedMen
+    Turns -left-|{ Players_Turns
+
+    Boards --|{ Squares
+
+    HangedMen --|{ SecretLetters
+
+@enduml

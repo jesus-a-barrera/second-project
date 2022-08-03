@@ -1,0 +1,68 @@
+@startuml Logic Diagram
+    Entity Players {
+        * id : int <<generated>>
+        --
+        * name : str
+          winnings : int
+          losses : int
+          ties : int
+    }
+    Entity Games {
+        * id : int <<generated>>
+        --
+        * name : str
+        * number_of_turns : int
+        * number_of_players : int
+    }
+    Entity Players_Turns {
+        * turn_id : id <<FK>>
+        * player_id : id <<FK>>
+        * player_role : str
+          is_last_move : boolean
+          is_winner : boolean
+    }
+    Entity Turns {
+        * id : int <<generated>>
+        --
+        * game_id : int <<FK>>
+          is_finished : boolean
+    }
+    Entity Boards {
+        * id : int <<generated>>
+        --
+        * turn_id : int <<FK>>
+          is_full : boolean
+    }
+    Entity Squares {
+        * board_id : int <<FK>>
+        * x_position : int
+        * y_position : int
+          piece : str 
+    }
+    Entity HangedMen {
+        * id : int <<generated>>
+        --
+        * turn_id : int <<FK>>
+          is_dead : boolean
+          is_saved : boolean
+    }
+    Entity SecretLetters {
+        * hangedman_id : int <<FK>>
+        * letter : str
+        * position : int
+          is_shown : boolean
+    }
+
+    Players --o{ Players_Turns
+    
+    Games --o{ Turns
+
+    Turns --o{ Boards
+    Turns -right-o{ HangedMen
+    Turns -left-|{ Players_Turns
+
+    Boards --|{ Squares
+
+    HangedMen --|{ SecretLetters
+
+@enduml

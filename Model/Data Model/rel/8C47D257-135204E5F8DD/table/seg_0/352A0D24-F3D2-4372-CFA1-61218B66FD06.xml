@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="352A0D24-F3D2-4372-CFA1-61218B66FD06" name="SecretLetters">
+<sourceDDLFile>SecondProject.ddl</sourceDDLFile>
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:18:17 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="letter" id="B686A9DE-1C8D-8151-161E-F2940AF66A32">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:19:30 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="position" id="B8B2CB30-2577-4BB2-2F28-EF1D8A9FF1E1">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:19:30 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_shown" id="D1B7EAF8-8A9F-37E0-BA5D-1EAA330D2CB4">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:19:30 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HangedMen_id" id="A528F88F-8EA2-4D38-BA34-84F271ABA7ED">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:19:46 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E028C740-C82B-6C07-F086-8019275C3AEE" referredColumn="76313280-0E58-2DCB-0CC1-A6A0A1097F7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC393A46-F7E1-0DC1-C101-35FF367B9C70" name="HangedMen_FK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:19:46 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A528F88F-8EA2-4D38-BA34-84F271ABA7ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

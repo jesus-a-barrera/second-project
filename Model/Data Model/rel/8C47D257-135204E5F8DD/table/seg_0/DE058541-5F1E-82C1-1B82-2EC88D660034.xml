@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE058541-5F1E-82C1-1B82-2EC88D660034" name="Turns">
+<sourceDDLFile>SecondProject.ddl</sourceDDLFile>
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 18:46:10 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="017580C9-66D5-C8F0-6AA0-C5E8957C84DC">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 18:49:01 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Games_id" id="B39D9DC5-5BAC-23EE-9FAA-88C21FEED11B">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:01:13 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4E4EA89-DC4F-3274-6BB6-B681CBE65E1B" referredColumn="54042729-78C1-11A7-35D8-51DDBEE855A8"/>
+</associations>
+</Column>
+<Column name="is_finished" id="3CCABFBD-8C37-BB57-A50D-B50E4D2C5D72">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:23:55 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8149F59-C1DB-0EFA-9852-70CD676DA2FA" name="Turns_PK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 18:49:01 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="017580C9-66D5-C8F0-6AA0-C5E8957C84DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D74A6B9-C443-D1B8-03AE-A655CA2E4DA5" name="Games_FK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:01:13 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B39D9DC5-5BAC-23EE-9FAA-88C21FEED11B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

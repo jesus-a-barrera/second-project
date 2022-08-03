@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="secretletters" directorySegmentName="seg_0" id="352A0D24-F3D2-4372-CFA1-61218B66FD06">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="hangedmen_id" id="A528F88F-8EA2-4D38-BA34-84F271ABA7ED">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ColumnProxy>
+<ColumnProxy name="letter" id="B686A9DE-1C8D-8151-161E-F2940AF66A32">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="position" id="B8B2CB30-2577-4BB2-2F28-EF1D8A9FF1E1">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="is_shown" id="D1B7EAF8-8A9F-37E0-BA5D-1EAA330D2CB4">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="hangedmen_fk" id="EC393A46-F7E1-0DC1-C101-35FF367B9C70">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="games" directorySegmentName="seg_0" id="882B15F9-1E24-6175-5DCC-C72270C149C9">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="number_of_turns" id="090D2552-B20C-9939-0F57-4B432E768391">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="name" id="19928207-0502-C7FF-54F1-D6E527273A37">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="54042729-78C1-11A7-35D8-51DDBEE855A8">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="number_of_players" id="B149684F-2563-E880-A8E6-9207FEFEBB3E">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="games_pk" id="331CFCDE-172F-DE0F-A2B5-F2B394D4E410">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="players_turns" directorySegmentName="seg_0" id="9A5BE16C-6ED2-BD7B-C4B1-C6D20048CB8F">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="is_last_move" id="30BF0372-81F9-115A-9835-69B48E4B498F">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="players_id" id="7D776D32-71C7-5236-0511-DDD0D2191B05">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ColumnProxy>
+<ColumnProxy name="player_role" id="8218BEA0-3736-59ED-745D-9B20C723134B">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="turns_id" id="8E082F69-052B-0628-598A-01B1200E9160">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ColumnProxy>
+<ColumnProxy name="is_winner" id="D7598E4B-A787-FEFD-02FF-9DD012DD1877">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="turns_fk" id="0866C9E1-B168-15B5-D5FC-FDB499340545">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="players_fk" id="2108FD76-BF03-8ED0-CA99-38BECDE62AB8">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:40:42 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nameChanged>true</nameChanged>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

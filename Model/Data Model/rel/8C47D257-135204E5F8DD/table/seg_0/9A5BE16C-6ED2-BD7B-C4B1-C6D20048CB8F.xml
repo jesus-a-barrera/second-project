@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A5BE16C-6ED2-BD7B-C4B1-C6D20048CB8F" name="Players_Turns">
+<sourceDDLFile>SecondProject.ddl</sourceDDLFile>
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:03:58 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="player_role" id="8218BEA0-3736-59ED-745D-9B20C723134B">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:05:32 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_last_move" id="30BF0372-81F9-115A-9835-69B48E4B498F">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:06:32 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_winner" id="D7598E4B-A787-FEFD-02FF-9DD012DD1877">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:06:32 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Players_id" id="7D776D32-71C7-5236-0511-DDD0D2191B05">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:08:03 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3B9614A-AA56-A425-B86B-C4A428770947" referredColumn="823FEFFC-3653-8FD6-D1F1-456CC5A53583"/>
+</associations>
+</Column>
+<Column name="Turns_id" id="8E082F69-052B-0628-598A-01B1200E9160">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:08:35 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="388B5CE6-CCE4-BB28-AED6-6704899A1EE3" referredColumn="017580C9-66D5-C8F0-6AA0-C5E8957C84DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2108FD76-BF03-8ED0-CA99-38BECDE62AB8" name="Players_FK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:08:03 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D776D32-71C7-5236-0511-DDD0D2191B05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0866C9E1-B168-15B5-D5FC-FDB499340545" name="Turns_FK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:08:35 UTC</createdTime>
+<ownerDesignName>SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E082F69-052B-0628-598A-01B1200E9160"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
