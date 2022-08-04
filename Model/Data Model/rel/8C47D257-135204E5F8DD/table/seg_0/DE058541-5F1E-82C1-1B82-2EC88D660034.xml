@@ -3,7 +3,7 @@
 <sourceDDLFile>SecondProject.ddl</sourceDDLFile>
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:46:10 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <ordsAlias>table_7</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,7 +12,7 @@
 <Column name="id" id="017580C9-66D5-C8F0-6AA0-C5E8957C84DC">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:49:01 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -22,7 +22,7 @@
 <Column name="Games_id" id="B39D9DC5-5BAC-23EE-9FAA-88C21FEED11B">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:01:13 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -36,7 +36,7 @@
 <Column name="is_finished" id="3CCABFBD-8C37-BB57-A50D-B50E4D2C5D72">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:23:55 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -50,7 +50,7 @@
 <ind_PK_UK id="E8149F59-C1DB-0EFA-9852-70CD676DA2FA" name="Turns_PK">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:49:01 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -61,7 +61,7 @@
 <ind_PK_UK id="5D74A6B9-C443-D1B8-03AE-A655CA2E4DA5" name="Games_FK">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:01:13 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

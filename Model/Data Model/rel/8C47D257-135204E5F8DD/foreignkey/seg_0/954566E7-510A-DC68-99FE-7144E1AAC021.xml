@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="954566E7-510A-DC68-99FE-7144E1AAC021" containerWithKeyObject="8AA0493F-934C-1019-6964-8EB51357135D" localFKIndex="7223DE30-EC06-F717-C6AE-46E255749583" name="Player_Turn_Giver">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:35:46 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<referredTableLongName>Players_Turns</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9A5BE16C-6ED2-BD7B-C4B1-C6D20048CB8F</referredTableID>
+<keyObject>37D61C19-3E7B-234A-21C9-0E4AE85E18C7</keyObject>
+<referredKeyID>37D61C19-3E7B-234A-21C9-0E4AE85E18C7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

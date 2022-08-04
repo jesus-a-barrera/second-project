@@ -3,7 +3,7 @@
 <sourceDDLFile>SecondProject.ddl</sourceDDLFile>
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:39:43 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <ordsAlias>table_2</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,17 +12,31 @@
 <Column name="id" id="823FEFFC-3653-8FD6-D1F1-456CC5A53583">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:43:04 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Players_Types_id" id="B484FEBA-BC3A-80B8-36C6-B14D3980FFF9">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 22:25:09 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE5337AD-6F2B-4426-D0E9-9CE7D676757E" referredColumn="FC7BCFD2-56C2-CDD3-312C-D414A60BC6DD"/>
+</associations>
+</Column>
 <Column name="name" id="0C7E2782-D4B3-D5BC-66A4-E4728895DE6B">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:43:04 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -33,7 +47,7 @@
 <Column name="winnings" id="A2997BB3-23C9-40FD-8DDB-EA0824604409">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:43:04 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,7 +58,7 @@
 <Column name="losses" id="2F7E6C52-FEBE-198D-912C-C8C5D3847249">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:43:04 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,12 +71,22 @@
 <ind_PK_UK id="CDD71178-0089-C544-7D5D-68315DE4E806" name="Players_PK">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 18:43:04 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="823FEFFC-3653-8FD6-D1F1-456CC5A53583"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="439E9897-E29E-FA5B-7FE1-58EE760CFE22" name="Players_Types_FK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 22:25:09 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B484FEBA-BC3A-80B8-36C6-B14D3980FFF9"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
