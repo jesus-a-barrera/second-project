@@ -3,7 +3,7 @@
 <sourceDDLFile>SecondProject.ddl</sourceDDLFile>
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:10:34 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <ordsAlias>table_6</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,17 +12,31 @@
 <Column name="id" id="76313280-0E58-2DCB-0CC1-A6A0A1097F7F">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:11:31 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="HangMan_Turns_id" id="12CAA3A6-8521-EB2F-25C7-BBE40BA5DEB7">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:43:41 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC407E2A-1DD4-6FAE-2023-F6FC895F8BB5" referredColumn="A0D64B17-9614-DB7E-39A7-7B7A457BC6CB"/>
+</associations>
+</Column>
 <Column name="is_dead" id="DDCAD603-7F2A-3290-4CD7-6A236F5A4B9F">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:11:31 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +48,7 @@
 <Column name="is_saved" id="C721F13D-E99E-2490-CE32-06F218B5FAD2">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:11:31 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,26 +57,12 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Turns_id" id="A8179E0D-0297-4DAD-D080-CC6F30D713A2">
-<createdBy>jesus.barrera</createdBy>
-<createdTime>2022-08-03 20:11:42 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="EF7D5353-8DA0-3964-2E80-51A705687053" referredColumn="017580C9-66D5-C8F0-6AA0-C5E8957C84DC"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="54F978EE-AFB1-A753-BCA6-4FABBDAE067A" name="HangedMen_PK">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:11:31 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -70,14 +70,14 @@
 <colUsage columnID="76313280-0E58-2DCB-0CC1-A6A0A1097F7F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DFB05F77-DF26-87B3-8071-9C15362BF02C" name="HangedMen_Turns_FK">
+<ind_PK_UK id="E8F8926D-2C45-3115-026F-108C52F54807" name="HangedMan_Turns_FK">
 <createdBy>jesus.barrera</createdBy>
-<createdTime>2022-08-03 20:11:42 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<createdTime>2022-08-04 20:43:41 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A8179E0D-0297-4DAD-D080-CC6F30D713A2"/>
+<colUsage columnID="12CAA3A6-8521-EB2F-25C7-BBE40BA5DEB7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

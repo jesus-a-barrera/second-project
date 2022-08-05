@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB9FEB1E-1348-8B69-56C2-AA1F3CE6C221" containerWithKeyObject="DA1109B6-D444-6D66-FC13-4EC88FC90A3B" localFKIndex="5104B483-6BF4-5147-27B7-855A59466B17" name="TicTacToe_Turns_FK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:42:38 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<referredTableLongName>TicTacToe_Turns</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CFB74B82-A9D5-FEDA-CC99-759BB3CA1903</referredTableID>
+<keyObject>55010ACF-3842-A13F-E601-23A87415FEA2</keyObject>
+<referredKeyID>55010ACF-3842-A13F-E601-23A87415FEA2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

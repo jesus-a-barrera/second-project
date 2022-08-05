@@ -2,10 +2,16 @@
     Entity Players {
         * id : int <<generated>>
         --
+        * player_type : id <<FK>>
         * name : str
           winnings : int
           losses : int
           ties : int
+    }
+    Entity Players_Types {
+      * id : int <<generated>>
+      --
+      * type : str
     }
     Entity Games {
         * id : int <<generated>>
@@ -15,9 +21,10 @@
         * number_of_players : int
     }
     Entity Players_Turns {
-        * turn_id : id <<FK>>
-        * player_id : id <<FK>>
-        * player_role : str
+        * id : int <<generated>>
+        --
+        * turn_id : int <<FK>>
+        * player_id : int <<FK>>
           is_last_move : boolean
           is_winner : boolean
     }
@@ -27,10 +34,22 @@
         * game_id : int <<FK>>
           is_finished : boolean
     }
+    Entity TicTacToe_Turns {
+        * id : int <<generated>>
+        --
+        * player_x : int <<FK>>
+        * player_o : int <<FK>>
+    }
+    Entity HangMan_Turns {
+        * id : int <<generated>>
+        --
+        * player_giver : int <<FK>>
+        * player_guesser : int <<FK>>
+    }
     Entity Boards {
         * id : int <<generated>>
         --
-        * turn_id : int <<FK>>
+        * tictactoe_turn_id : int <<FK>>
           is_full : boolean
     }
     Entity Squares {
@@ -42,7 +61,7 @@
     Entity HangedMen {
         * id : int <<generated>>
         --
-        * turn_id : int <<FK>>
+        * hangman_turn_id : int <<FK>>
           is_dead : boolean
           is_saved : boolean
     }
@@ -53,15 +72,25 @@
           is_shown : boolean
     }
 
-    Players --o{ Players_Turns
-    
-    Games --o{ Turns
+    Players_Types --o{ Players
 
-    Turns --o{ Boards
-    Turns -right-o{ HangedMen
-    Turns -left-|{ Players_Turns
+    Players -left-o{ Players_Turns
+
+    Games --o{ Turns
+    
+    Turns -right-|{ Players_Turns
+
+    Players_Turns --|{ TicTacToe_Turns
+    Players_Turns --|{ TicTacToe_Turns
+
+    Players_Turns --|{ HangMan_Turns
+    Players_Turns --|{ HangMan_Turns
+
+    TicTacToe_Turns --o{ Boards
 
     Boards --|{ Squares
+
+    HangMan_Turns --o{ HangedMen
 
     HangedMen --|{ SecretLetters
 

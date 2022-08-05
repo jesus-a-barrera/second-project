@@ -3,47 +3,16 @@
 <sourceDDLFile>SecondProject.ddl</sourceDDLFile>
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:15:03 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <ordsAlias>table_8</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="x_position" id="C57D90CB-42A9-DA8D-FCB9-9D0D65EB8264">
-<createdBy>jesus.barrera</createdBy>
-<createdTime>2022-08-03 20:17:00 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="y_position" id="05BA3ABD-06FB-C8DC-E61E-608DDD234D57">
-<createdBy>jesus.barrera</createdBy>
-<createdTime>2022-08-03 20:17:00 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="piece" id="5444E7C4-C417-5C5C-FC3E-703C5494E4E0">
-<createdBy>jesus.barrera</createdBy>
-<createdTime>2022-08-03 20:17:00 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="Boards_id" id="17F32D07-BC74-F7A4-BFE0-6464BE1CB2A6">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:17:19 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -54,12 +23,43 @@
 <colAssociation fkAssociation="885E4E38-8CA9-12EF-78D2-9795D8E5778C" referredColumn="6E508215-706A-B1A0-7BE9-8DE61B70DD05"/>
 </associations>
 </Column>
+<Column name="x_position" id="C57D90CB-42A9-DA8D-FCB9-9D0D65EB8264">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:17:00 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="y_position" id="05BA3ABD-06FB-C8DC-E61E-608DDD234D57">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:17:00 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="piece" id="5444E7C4-C417-5C5C-FC3E-703C5494E4E0">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-03 20:17:00 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="7D677D10-9252-474A-4EBA-3371A9C82B34" name="Boards_FK">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:17:19 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

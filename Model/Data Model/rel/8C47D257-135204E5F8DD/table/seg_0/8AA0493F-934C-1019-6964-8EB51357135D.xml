@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8AA0493F-934C-1019-6964-8EB51357135D" name="HangMan_Turns">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:27:37 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A0D64B17-9614-DB7E-39A7-7B7A457BC6CB">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:41:21 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Player_Giver" id="7C3A77A8-F83F-BEDA-F1FE-54EED4857524">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:35:46 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="954566E7-510A-DC68-99FE-7144E1AAC021" referredColumn="D408BC9D-A5F9-A194-7DD5-279F0CB114A7"/>
+</associations>
+</Column>
+<Column name="Player_Guesser" id="B7867925-4A52-5214-D0BB-A7369AFCE91D">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:37:09 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86A8E275-CD43-D574-5699-9C974C4815E1" referredColumn="D408BC9D-A5F9-A194-7DD5-279F0CB114A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B821CFE-C601-4003-4B86-C142818031EF" name="HangMan_Turns_PK">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:41:21 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0D64B17-9614-DB7E-39A7-7B7A457BC6CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7223DE30-EC06-F717-C6AE-46E255749583" name="Player_Turn_Giver">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:35:46 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C3A77A8-F83F-BEDA-F1FE-54EED4857524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F337ACA1-A31D-E27C-4B52-E2279C2C01A8" name="Player_Turn_Guesser">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:37:09 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7867925-4A52-5214-D0BB-A7369AFCE91D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,10 +1,15 @@
-@startuml Conceptual Diagram
+@startuml Logic Diagram
     Object Players {
         id
+        player_type
         name
         winnings
         losses
-        ties 
+        ties
+    }
+    Object Players_Types {
+        id
+        type
     }
     Object Games {
         id
@@ -13,35 +18,41 @@
         number_of_players
     }
     Object Players_Turns {
+        id
         turn_id
         player_id
-        player_role
         is_last_move
         is_winner
     }
     Object Turns {
         id
         game_id
-        player1_id
-        player2_id
-        last_move
         is_finished
-        winner
+    }
+    Object TicTacToe_Turns {
+        id
+        player_x
+        player_o
+    }
+    Object HangMan_Turns {
+        id
+        player_giver
+        player_guesser
     }
     Object Boards {
         id
-        turn_id
+        tictactoe_turn_id
         is_full
     }
     Object Squares {
         board_id
         x_position
         y_position
-        piece 
+        piece
     }
     Object HangedMen {
         id
-        turn_id
+        hangman_turn_id
         is_dead
         is_saved
     }
@@ -52,15 +63,25 @@
         is_shown
     }
 
-    Players --o{ Players_Turns
-    
-    Games --o{ Turns
+    Players_Types --o{ Players
 
-    Turns --o{ Boards
-    Turns -right-o{ HangedMen
-    Turns -left-|{ Players_Turns
+    Players -left-o{ Players_Turns
+
+    Games --o{ Turns
+    
+    Turns -right-|{ Players_Turns
+
+    Players_Turns --|{ TicTacToe_Turns
+    Players_Turns --|{ TicTacToe_Turns
+
+    Players_Turns --|{ HangMan_Turns
+    Players_Turns --|{ HangMan_Turns
+
+    TicTacToe_Turns --o{ Boards
 
     Boards --|{ Squares
+
+    HangMan_Turns --o{ HangedMen
 
     HangedMen --|{ SecretLetters
 

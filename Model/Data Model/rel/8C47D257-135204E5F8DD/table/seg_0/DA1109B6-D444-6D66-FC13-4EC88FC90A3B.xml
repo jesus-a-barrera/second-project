@@ -3,7 +3,7 @@
 <sourceDDLFile>SecondProject.ddl</sourceDDLFile>
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:12:41 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <ordsAlias>table_7</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -12,17 +12,31 @@
 <Column name="id" id="6E508215-706A-B1A0-7BE9-8DE61B70DD05">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:13:25 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="TicTacToe_Turns_id" id="869F4AC0-FB8A-530A-DC2E-BAB2C5384282">
+<createdBy>jesus.barrera</createdBy>
+<createdTime>2022-08-04 20:42:38 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB9FEB1E-1348-8B69-56C2-AA1F3CE6C221" referredColumn="F17FD9F6-A4AD-033F-F7EB-A2908414F28F"/>
+</associations>
+</Column>
 <Column name="is_full" id="BBBE545E-D09B-A381-30D8-98686A94E470">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:13:25 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,26 +45,12 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Turns_id" id="48212C80-FB6A-24A9-5688-0C4C149C322F">
-<createdBy>jesus.barrera</createdBy>
-<createdTime>2022-08-03 20:13:42 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="860107FD-6767-B443-254D-882401A56353" referredColumn="017580C9-66D5-C8F0-6AA0-C5E8957C84DC"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E881953A-AB1D-3182-9AD0-634B5D8DA769" name="Boards_PK">
 <createdBy>jesus.barrera</createdBy>
 <createdTime>2022-08-03 20:13:25 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<ownerDesignName>Data Model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -58,14 +58,14 @@
 <colUsage columnID="6E508215-706A-B1A0-7BE9-8DE61B70DD05"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B38C09D2-B4A0-FA92-9294-3C88E9E0F8ED" name="Boards_Turns_FK">
+<ind_PK_UK id="5104B483-6BF4-5147-27B7-855A59466B17" name="TicTacToe_Turns_FK">
 <createdBy>jesus.barrera</createdBy>
-<createdTime>2022-08-03 20:13:42 UTC</createdTime>
-<ownerDesignName>SecondProject</ownerDesignName>
+<createdTime>2022-08-04 20:42:38 UTC</createdTime>
+<ownerDesignName>Data Model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="48212C80-FB6A-24A9-5688-0C4C149C322F"/>
+<colUsage columnID="869F4AC0-FB8A-530A-DC2E-BAB2C5384282"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
