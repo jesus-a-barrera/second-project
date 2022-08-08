@@ -1,3 +1,19 @@
+-- ********************** INICIALIZING ********************** 
+
+
+-- Reseting tables
+truncate table squares;
+truncate table secretletters;
+truncate table hangedmen;
+truncate table boards;
+truncate table hangman_turns;
+truncate table tictactoe_turns;
+truncate table players_turns;
+truncate table players;
+truncate table players_types;
+truncate table turns;
+truncate table games;
+
 -- Creating games
 INSERT INTO games VALUES (001, 'TicTacToe', 2, 2);
 INSERT INTO games VALUES (002, 'MangMan', 2, 2);
@@ -9,76 +25,46 @@ INSERT INTO players_types VALUES (002, 'BOT');
 -- Creating players
 INSERT INTO players VALUES (001, 001, 'Antonio', 0, 0);
 INSERT INTO players VALUES (002, 001, 'Oliver', 0, 0);
+INSERT INTO players VALUES (003, 001, 'Daniela', 0, 0);
+INSERT INTO players VALUES (004, 001, 'Linda', 0, 0);
+INSERT INTO players VALUES (005, 001, 'Jesus', 0, 0);
+INSERT INTO players VALUES (006, 001, 'Carlos', 0, 0);
+INSERT INTO players VALUES (007, 001, 'Fernanda', 0, 0);
+INSERT INTO players VALUES (008, 001, 'Estuardo', 0, 0);
+INSERT INTO players VALUES (009, 001, 'Eduardo', 0, 0);
+INSERT INTO players VALUES (010, 001, 'Pamela', 0, 0);
 
--- Creating finished TicTacToe turns
+
+-- ********************** PLAYING ********************** 
+
+
+-- Creating turns
+
+
+-- Turn 001
+
+-- Creating TicTacToe turn
 INSERT INTO turns VALUES (001, 001, 1);
-INSERT INTO turns VALUES (002, 001, 1);
 
--- Creating finished HangMan turns
-INSERT INTO turns VALUES (003, 002, 1);
-INSERT INTO turns VALUES (004, 002, 1);
-
--- Creating players 001 TicTacToe turns
+-- Creating players 001 turn
 INSERT INTO players_turns VALUES (001, 001, 001, 1, 1);
-INSERT INTO players_turns VALUES (002, 002, 001, 1, 1);
 
 -- Updating player 001 statistics
-UPDATE players SET winnings = 2 WHERE id = 001;
+UPDATE players SET winnings = winnings + 1 WHERE id = 001;
 
--- Creating players 002 TicTacToe turns
+-- Creating players 002 turn
 INSERT INTO players_turns VALUES (003, 001, 002, 0, 0);
-INSERT INTO players_turns VALUES (004, 002, 002, 0, 0);
 
 -- Updating player 002 statistics
-UPDATE players SET losses = 2 WHERE id = 002;
+UPDATE players SET losses = losses + 1 WHERE id = 002;
 
--- Creating players 001 HangMan turns
-INSERT INTO players_turns VALUES (005, 003, 001, 0, 1);
-INSERT INTO players_turns VALUES (006, 004, 001, 1, 0);
-
--- Updating player 001 statistics
-UPDATE players SET losses = 1 WHERE id = 001;
-UPDATE players SET winnings = 3 WHERE id = 001;
-
--- Creating players 002 HangMan turns
-INSERT INTO players_turns VALUES (007, 003, 002, 1, 0);
-INSERT INTO players_turns VALUES (008, 004, 002, 0, 1);
-
--- Updating player 002 statistics
-UPDATE players SET winnings = 1 WHERE id = 002;
-UPDATE players SET losses = 2 WHERE id = 003;
-
--- Crating TicTacToe turns
+-- Player 001 vrs player 002
 INSERT INTO tictactoe_turns VALUES (001, 001, 003);
-INSERT INTO tictactoe_turns VALUES (002, 002, 004);
 
--- Crating HangMan turns
-INSERT INTO hangman_turns VALUES (001, 005, 007);
-INSERT INTO hangman_turns VALUES (002, 006, 008);
-
--- Creating hangedmen
-INSERT INTO hangedmen VALUES (001, 001, 0, 1);
-INSERT INTO hangedmen VALUES (002, 002, 1, 0);
-
--- Creating hangedmen 001 secret words
-INSERT INTO secretletters VALUES (001, 'h', 1, 1);
-INSERT INTO secretletters VALUES (001, 'e', 2, 1);
-INSERT INTO secretletters VALUES (001, 'l', 3, 1);
-INSERT INTO secretletters VALUES (001, 'l', 4, 1);
-INSERT INTO secretletters VALUES (001, 'o', 5, 1);
-
--- Creating hangedmen 002 secret words
-INSERT INTO secretletters VALUES (002, 'g', 1, 1);
-INSERT INTO secretletters VALUES (002, '0', 2, 0);
-INSERT INTO secretletters VALUES (002, 'a', 3, 1);
-INSERT INTO secretletters VALUES (002, 'l', 4, 1);
-INSERT INTO secretletters VALUES (002, 's', 5, 0);
-
--- Creating boards
+-- Creating board
 INSERT INTO boards VALUES (001, 001, 0);
-INSERT INTO boards VALUES (002, 001, 0);
 
--- Creating board 001 squares
+-- Creating squares
 INSERT INTO squares VALUES (001, 1, 1, 'X');
 INSERT INTO squares VALUES (001, 1, 2, 'X');
 INSERT INTO squares VALUES (001, 1, 3, 'X');
@@ -89,7 +75,31 @@ INSERT INTO squares VALUES (001, 3, 1, 'O');
 INSERT INTO squares VALUES (001, 3, 2, null);
 INSERT INTO squares VALUES (001, 3, 3, null);
 
--- Creating board 002 squareS
+
+-- Turn 002
+
+-- Creating turn TicTacToe
+INSERT INTO turns VALUES (002, 001, 1);
+
+-- Creating players 001 turn
+INSERT INTO players_turns VALUES (002, 002, 001, 1, 1);
+
+-- Updating player 001 statistics
+UPDATE players SET winnings = winnings + 1 WHERE id = 001;
+
+-- Creating players 002 turn
+INSERT INTO players_turns VALUES (004, 002, 002, 0, 0);
+
+-- Updating player 002 statistics
+UPDATE players SET losses = losses + 1 WHERE id = 002;
+
+-- Player 001 vrs player 002
+INSERT INTO tictactoe_turns VALUES (002, 002, 004);
+
+-- Creating board
+INSERT INTO boards VALUES (002, 002, 0);
+
+-- Creating squares
 INSERT INTO squares VALUES (002, 1, 1, 'O');
 INSERT INTO squares VALUES (002, 1, 2, 'O');
 INSERT INTO squares VALUES (002, 1, 3, 'O');
@@ -101,14 +111,133 @@ INSERT INTO squares VALUES (002, 3, 2, null);
 INSERT INTO squares VALUES (002, 3, 3, null);
 
 
-/*truncate table squares;
-truncate table secretletters;
-truncate table hangedmen;
-truncate table boards;
-truncate table hangman_turns;
-truncate table tictactoe_turns;
-truncate table players_turns;
-truncate table players;
-truncate table players_types;
-truncate table turns;
-truncate table games;*/
+-- Turn 003
+
+-- Creating turn HangMan
+INSERT INTO turns VALUES (003, 002, 1);
+
+-- Creating players 001 turn
+INSERT INTO players_turns VALUES (005, 003, 001, 0, 1);
+
+-- Updating player 001 statistics
+UPDATE players SET winnings = winnings + 1 WHERE id = 001;
+
+-- Creating players 002 turn
+INSERT INTO players_turns VALUES (007, 003, 002, 1, 0);
+
+-- Updating player 002 statistics
+UPDATE players SET losses = losses + 1 WHERE id = 002;
+
+-- Player 001 vrs player 002
+INSERT INTO hangman_turns VALUES (001, 005, 007);
+
+-- Creating hanged man
+INSERT INTO hangedmen VALUES (001, 001, 0, 1);
+
+-- Creating secret word
+INSERT INTO secretletters VALUES (001, 'h', 1, 1);
+INSERT INTO secretletters VALUES (001, 'e', 2, 1);
+INSERT INTO secretletters VALUES (001, 'l', 3, 1);
+INSERT INTO secretletters VALUES (001, 'l', 4, 1);
+INSERT INTO secretletters VALUES (001, 'o', 5, 1);
+
+
+-- Turn 004
+
+-- Creating turn HangMan
+INSERT INTO turns VALUES (004, 002, 1);
+
+-- Creating players 001 turn
+INSERT INTO players_turns VALUES (006, 004, 001, 1, 0);
+
+-- Updating player 001 statistics
+UPDATE players SET losses = losses + 1 WHERE id = 001;
+
+-- Creating players 002 turns
+INSERT INTO players_turns VALUES (008, 004, 002, 0, 1);
+
+-- Updating player 002 statistics
+UPDATE players SET winnings = winnings + 1 WHERE id = 001;
+
+-- Player 001 vrs player 002
+INSERT INTO hangman_turns VALUES (002, 006, 008);
+
+-- Creating hanged man
+INSERT INTO hangedmen VALUES (002, 002, 1, 0);
+
+-- Creating secret word
+INSERT INTO secretletters VALUES (002, 'g', 1, 1);
+INSERT INTO secretletters VALUES (002, '0', 2, 0);
+INSERT INTO secretletters VALUES (002, 'a', 3, 1);
+INSERT INTO secretletters VALUES (002, 'l', 4, 1);
+INSERT INTO secretletters VALUES (002, 's', 5, 0);
+
+
+-- Turn 5
+
+-- Creating turn HangMan
+INSERT INTO turns VALUES (005, 002, 1);
+
+-- Creating players 003 turn
+INSERT INTO players_turns VALUES (009, 005, 003, 1, 0);
+
+-- Updating player 003 statistics
+UPDATE players SET losses = losses + 1 WHERE id = 003;
+
+-- Creating players 010 turn
+INSERT INTO players_turns VALUES (010, 005, 010, 0, 1);
+
+-- Updating player 010 statistics
+UPDATE players SET winnings = winnings + 1 WHERE id = 010;
+
+-- Player 003 vrs player 010
+INSERT INTO hangman_turns VALUES (003, 009, 010);
+
+-- Creating hanged man
+INSERT INTO hangedmen VALUES (003, 003, 0, 1);
+
+-- Creating secret word
+INSERT INTO secretletters VALUES (003, 'f', 1, 1);
+INSERT INTO secretletters VALUES (003, 'o', 2, 1);
+INSERT INTO secretletters VALUES (003, 'o', 3, 1);
+INSERT INTO secretletters VALUES (003, 't', 4, 1);
+INSERT INTO secretletters VALUES (003, 'b', 5, 1);
+INSERT INTO secretletters VALUES (003, 'a', 6, 1);
+INSERT INTO secretletters VALUES (003, 'l', 7, 1);
+INSERT INTO secretletters VALUES (003, 'l', 8, 1);
+
+
+-- Turn 006
+
+-- Creating turn TicTacToe
+INSERT INTO turns VALUES (006, 001, 1);
+
+-- Creating players 006 turn
+INSERT INTO players_turns VALUES (011, 006, 006, 1, 0);
+
+-- Updating player 006 statistics
+UPDATE players SET losses = losses + 1 WHERE id = 006;
+
+-- Creating players 001 turn
+INSERT INTO players_turns VALUES (012, 006, 001, 0, 1);
+
+-- Updating player 001 statistics
+UPDATE players SET winnings = winnings + 1 WHERE id = 001;
+
+-- Player 006 vrs player 001
+INSERT INTO tictactoe_turns VALUES (003, 011, 012);
+
+-- Creating board
+INSERT INTO boards VALUES (003, 003, 0);
+
+-- Creating squares
+INSERT INTO squares VALUES (003, 1, 1, 'O');
+INSERT INTO squares VALUES (003, 1, 2, 'O');
+INSERT INTO squares VALUES (003, 1, 3, 'O');
+INSERT INTO squares VALUES (003, 2, 1, 'X');
+INSERT INTO squares VALUES (003, 2, 2, 'X');
+INSERT INTO squares VALUES (003, 2, 3, null);
+INSERT INTO squares VALUES (003, 3, 1, 'X');
+INSERT INTO squares VALUES (003, 3, 2, null);
+INSERT INTO squares VALUES (003, 3, 3, null);
+
