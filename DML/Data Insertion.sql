@@ -14,6 +14,8 @@ TRUNCATE TABLE players_types;
 TRUNCATE TABLE turns;
 TRUNCATE TABLE games;
 
+SET TRANSACTION NAME 'INITIAL_DATA_INSERTION';
+
 -- Creating games
 INSERT INTO games VALUES (001, 'TicTacToe', 2, 2);
 INSERT INTO games VALUES (002, 'MangMan', 2, 2);
@@ -34,6 +36,7 @@ INSERT INTO players VALUES (008, 001, 'Estuardo', 0, 0);
 INSERT INTO players VALUES (009, 001, 'Eduardo', 0, 0);
 INSERT INTO players VALUES (010, 001, 'Pamela', 0, 0);
 
+COMMIT;
 
 -- ********************** PLAYING ********************** 
 
@@ -42,7 +45,7 @@ INSERT INTO players VALUES (010, 001, 'Pamela', 0, 0);
 
 -- Turn 001
 
-SET TRANSACTION NAME "TICTACTOE_TURN_1";
+SET TRANSACTION NAME 'TICTACTOE_TURN_1';
 
 -- Creating TicTacToe turn
 INSERT INTO turns VALUES (001, 001, 1);
@@ -80,7 +83,7 @@ COMMIT;
 
 -- Turn 002
 
-SET TRANSACTION NAME "TICTACTOE_TURN_2";
+SET TRANSACTION NAME 'TICTACTOE_TURN_2';
 
 -- Creating turn TicTacToe
 INSERT INTO turns VALUES (002, 001, 1);
@@ -118,7 +121,7 @@ COMMIT;
 
 -- Turn 003
 
-SET TRANSACTION NAME "HANGMAN_TURN_1";
+SET TRANSACTION NAME 'HANGMAN_TURN_1';
 
 -- Creating turn HangMan
 INSERT INTO turns VALUES (003, 002, 1);
@@ -133,7 +136,7 @@ UPDATE players SET losses = losses + 1 WHERE id = 001;
 INSERT INTO players_turns VALUES (007, 003, 002, 8, 1, 1);
 
 -- Updating player 002 statistics
-UPDATE players SET winner = winner + 1 WHERE id = 002;
+UPDATE players SET winnings = winnings + 1 WHERE id = 002;
 
 -- Player 001 vrs player 002
 INSERT INTO hangman_turns VALUES (001, 005, 007);
@@ -152,7 +155,7 @@ COMMIT;
 
 -- Turn 004
 
-SET TRANSACTION NAME "HANGMAN_TURN_2";
+SET TRANSACTION NAME 'HANGMAN_TURN_2';
 
 -- Creating turn HangMan
 INSERT INTO turns VALUES (004, 002, 1);
@@ -186,7 +189,7 @@ COMMIT;
 
 -- Turn 5
 
-SET TRANSACTION NAME "HANGMAN_TURN_3";
+SET TRANSACTION NAME 'HANGMAN_TURN_3';
 
 -- Creating turn HangMan
 INSERT INTO turns VALUES (005, 002, 1);
@@ -223,7 +226,7 @@ COMMIT;
 
 -- Turn 006
 
-SET TRANSACTION NAME "TICTACTOE_TURN_3";
+SET TRANSACTION NAME 'TICTACTOE_TURN_3';
 
 -- Creating turn TicTacToe
 INSERT INTO turns VALUES (006, 001, 1);
