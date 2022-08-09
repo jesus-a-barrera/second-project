@@ -9,6 +9,18 @@
 
 -- predefined type, no DDL - XMLTYPE
 
+DROP TABLE squares;
+DROP TABLE secretletters;
+DROP TABLE hangedmen;
+DROP TABLE boards;
+DROP TABLE hangman_turns;
+DROP TABLE tictactoe_turns;
+DROP TABLE players_turns;
+DROP TABLE players;
+DROP TABLE players_types;
+DROP TABLE turns;
+DROP TABLE games;
+
 CREATE TABLE boards (
     id                 NUMBER NOT NULL,
     tictactoe_turns_id NUMBER NOT NULL,
@@ -54,11 +66,12 @@ CREATE TABLE players (
 ALTER TABLE players ADD CONSTRAINT players_pk PRIMARY KEY ( id );
 
 CREATE TABLE players_turns (
-    id           NUMBER NOT NULL,
-    turns_id     NUMBER NOT NULL,
-    players_id   NUMBER NOT NULL,
-    is_last_move CHAR(1) NOT NULL,
-    is_winner    CHAR(1)
+    id             NUMBER NOT NULL,
+    turns_id       NUMBER NOT NULL,
+    players_id     NUMBER NOT NULL,
+    actions_number NUMBER,
+    is_last_move   CHAR(1) NOT NULL,
+    is_winner      CHAR(1)
 );
 
 ALTER TABLE players_turns ADD CONSTRAINT players_turns_pk PRIMARY KEY ( id );
